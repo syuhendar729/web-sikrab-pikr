@@ -19,6 +19,8 @@ while (tebak == true){
   tebak = confirm("Kita masih banyak tebak-tebakan loh, mau nyoba lagi ga?")
 }
 
+
+
 (function() {
   "use strict";
 
