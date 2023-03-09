@@ -674,9 +674,9 @@ section {
 }
 
 #about .content i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #1dc8cd;
+  font-size: 18px;
+/*  padding-right: 4px;*/
+/*  color: #1dc8cd;*/
 }
 
 #about .content ul {

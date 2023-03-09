@@ -5,7 +5,31 @@
 * License: https://bootstrapmade.com/license/
 */
 
-// alert("Website ini masih dalam tahap pengembangan, jadi mohon bersabar yang teman-teman ku :)")
+Swal.fire({
+  icon: 'info',
+  title: 'Oops...',
+  text: 'Website ini masih dalam tahap pengembangan, jadi mohon bersabar ya teman-teman ku :)',
+  footer: '<a href="https://github.com/syuhendar729/web-sikrab-pikr" target="_blank">Ingin berkontribusi?</a>',
+}).then(() => {
+  Swal.fire({
+    title: 'Alert',
+    text: 'Tebak-tebakan dlu yuk sebelum ngeliat websitenya, mau ga?',
+    showDenyButton: true,
+    showCancelButton: false,
+    confirmButtonText: 'Mau dong',
+    denyButtonText: `Enggak deh`,
+  }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+      Swal.fire('Tapi Boong', 'Awokawok', 'info')
+    } else if (result.isDenied) {
+      Swal.fire('😄','Oke deh, semoga nyaman dengan websitenya ya hehe...', 'info')
+    }
+  })
+});
+
+
+
 // let tebak = confirm("Tebak-tebakan dlu yuk sebelum ngeliat websitenya, mau ga?")
 // while (tebak == true){
 //   let waktu = prompt("Apakah benar acara kita diadakan di tanggal 18 Maret 2023? Ketik 'y' jika benar dan 'g' jika salah")
