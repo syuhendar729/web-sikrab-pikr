@@ -5,19 +5,19 @@
 * License: https://bootstrapmade.com/license/
 */
 
-alert("Website ini masih dalam tahap pengembangan, jadi mohon bersabar yang teman-teman ku :)")
-let tebak = confirm("Tebak-tebakan dlu yuk sebelum ngeliat websitenya, mau ga?")
-while (tebak == true){
-  let waktu = prompt("Apakah benar acara kita diadakan di tanggal 18 Maret 2023? Ketik 'y' jika benar dan 'g' jika salah")
-  if (waktu == "g") {
-    alert("Yeaay, jawaban kamu benar !!")
-  } else if (waktu == "y") {
-    alert("Nice try")
-  } else {
-    alert("Jawaban kamu ga bisa dideteksi sistem :(")
-  }
-  tebak = confirm("Kita masih banyak tebak-tebakan loh, mau nyoba lagi ga?")
-}
+// alert("Website ini masih dalam tahap pengembangan, jadi mohon bersabar yang teman-teman ku :)")
+// let tebak = confirm("Tebak-tebakan dlu yuk sebelum ngeliat websitenya, mau ga?")
+// while (tebak == true){
+//   let waktu = prompt("Apakah benar acara kita diadakan di tanggal 18 Maret 2023? Ketik 'y' jika benar dan 'g' jika salah")
+//   if (waktu == "g") {
+//     alert("Yeaay, jawaban kamu benar !!")
+//   } else if (waktu == "y") {
+//     alert("Nice try")
+//   } else {
+//     alert("Jawaban kamu ga bisa dideteksi sistem :(")
+//   }
+//   tebak = confirm("Kita masih banyak tebak-tebakan loh, mau nyoba lagi ga?")
+// }
 
 
 
