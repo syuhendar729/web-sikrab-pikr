@@ -3,11 +3,11 @@ window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).
 /* customize formbutton below*/     
 formbutton("create", {
   action: "https://formspree.io/f/xbjeypdj",
-  title: "Kirim masukkan, saran, atau pertanyaan!",
+  title: "Kirim pesanmu terkait acara ini!",
   fields: [
     { 
       type: "email", 
-      label: "Masukkan email (jika ingin direply) :", 
+      label: "Masukkan email :", 
       name: "email",
       required: true,
       placeholder: "your@email.com"
@@ -16,7 +16,7 @@ formbutton("create", {
       type: "textarea",
       label: "Pesan:",
       name: "message",
-      placeholder: "Apa yang kamu tanyakan?",
+      placeholder: "Tulis pesanmu disini!",
     },
     { type: "submit" }      
   ],
