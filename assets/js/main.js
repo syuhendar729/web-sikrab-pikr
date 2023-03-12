@@ -7,25 +7,34 @@
 
 Swal.fire({
   icon: 'info',
-  title: 'Oops...',
-  text: 'Website ini masih dalam tahap pengembangan, jadi mohon bersabar ya teman-teman ku :)',
+  title: 'INFO',
+  text: 'Website ini dibuat oleh divisi Publikasi dan Dokumentasi SiKrab Outbound 2023',
   footer: '<a href="https://github.com/syuhendar729/web-sikrab-pikr" target="_blank">Ingin berkontribusi?</a>',
 }).then(() => {
-  Swal.fire({
-    title: 'Alert',
-    text: 'Tebak-tebakan dlu yuk sebelum ngeliat websitenya, mau ga?',
-    showDenyButton: true,
-    showCancelButton: false,
-    confirmButtonText: 'Mau dong',
-    denyButtonText: `Enggak deh`,
-  }).then((result) => {
-    /* Read more about isConfirmed, isDenied below */
-    if (result.isConfirmed) {
-      Swal.fire('Tapi Boong', 'Awokawok', 'info')
-    } else if (result.isDenied) {
-      Swal.fire('😄','Oke deh, semoga nyaman dengan websitenya ya hehe...', 'info')
-    }
-  })
+    Swal.fire({
+      title: 'Hi',
+      text: 'Mau liat ga Menfess kita ?',
+      showDenyButton: true,
+      showCancelButton: false,
+      confirmButtonText: '<a href="https://github.com/syuhendar729/web-sikrab-pikr" target="_blank">Mau dong</a>',
+      denyButtonText: `Enggak deh`,
+    }).then(() => {
+        Swal.fire({
+          title: 'Hi',
+          text: 'Oke deh tebak-tebakan dlu yuk sebelum ngeliat websitenya, mau ga?',
+          showDenyButton: true,
+          showCancelButton: false,
+          confirmButtonText: 'Mau dong',
+          denyButtonText: `Enggak deh`,
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            Swal.fire('Tapi Boong', 'Awokawok', 'info')
+          } else if (result.isDenied) {
+            Swal.fire('😄','Oke deh, semoga nyaman dengan websitenya ya hehe...', 'info')
+          }
+        })
+    })   
 });
 
 
