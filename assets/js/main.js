@@ -16,7 +16,7 @@ Swal.fire({
       text: 'Mau liat ga Menfess kita ?',
       showDenyButton: true,
       showCancelButton: false,
-      confirmButtonText: '<a href="https://github.com/syuhendar729/web-sikrab-pikr" target="_blank">Mau dong</a>',
+      confirmButtonText: '<a href="https://outboundpikr2023-menfess.vercel.app/" target="_blank">Mau dong</a>',
       denyButtonText: `Enggak deh`,
     }).then(() => {
         Swal.fire({
