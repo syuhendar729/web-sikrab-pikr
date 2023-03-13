@@ -12,7 +12,7 @@ Swal.fire({
   footer: '<a href="https://github.com/syuhendar729/web-sikrab-pikr" target="_blank">Ingin berkontribusi?</a>',
 }).then(() => {
     Swal.fire({
-      title: 'Hi',
+      title: 'Menfess',
       text: 'Mau liat ga Menfess kita ?',
       showDenyButton: true,
       showCancelButton: false,
@@ -20,7 +20,7 @@ Swal.fire({
       denyButtonText: `Enggak deh`,
     }).then(() => {
         Swal.fire({
-          title: 'Hi',
+          title: 'Games',
           text: 'Oke deh tebak-tebakan dlu yuk sebelum ngeliat websitenya, mau ga?',
           showDenyButton: true,
           showCancelButton: false,
@@ -36,6 +36,10 @@ Swal.fire({
         })
     })   
 });
+
+let btnDaftar = document.getElementById('gbsDaftar');
+console.log(btnDaftar);
+btnDaftar.addEventListener("click", console.log("BERHASIL"));
 
 
 
